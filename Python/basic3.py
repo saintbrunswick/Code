@@ -32,7 +32,7 @@ is a ......... multi-line
 heredoc string ------> example
 """)
 
-print("/n")
+print("\n")
 # Program to calculate number fo days between two dates.
 f_date = date(2022, 4, 23)
 l_date = date(2022, 12, 24)
