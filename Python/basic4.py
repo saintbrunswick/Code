@@ -35,4 +35,7 @@ print(near_thousand(2200))
 
 
 print("\n")
-#
+# Program to display the first and last color from list
+
+color_list = ["Red", "Green", "White", "Black"]
+print("%s %s" % (color_list[0], color_list[-1]))
