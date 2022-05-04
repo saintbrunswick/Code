@@ -39,3 +39,58 @@ def histogram(items):
 
 
 histogram([2, 3, 6, 5])
+
+
+print("\n")
+# Program to concate all elements in a list into a string and return it.
+
+
+def concatenate_list_data(list):
+    result = ""
+    for element in list:
+        result += str(element)
+    return result
+
+
+print(concatenate_list_data([1, 5, 12, 2]))
+
+
+print("\n")
+# Program to print out a set contain all the colors from color_list_1 wich are not present in color_list_2.
+
+color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])
+
+print(color_list_1.difference(color_list_2))
+
+
+print("\n")
+# Program that will accept the base and height of a triangle and compute the area.
+
+b = int(input("Input the base: "))
+h = int(input("Input the height: "))
+
+area = b*h/2
+
+print("area = ", area)
+
+
+print("\n")
+# Program to compute the greatest common divisor (GCD) of two positive integers.
+
+
+def gcd(x, y):
+    gcd = 1
+
+    if x % y == 0:
+        return y
+
+    for k in range(int(y / 2), 0, -1):
+        if x % k == 0 and y % k == 0:
+            gcd = k
+            break
+    return gcd
+
+
+print(gcd(12, 17))
+print(gcd(4, 6))
