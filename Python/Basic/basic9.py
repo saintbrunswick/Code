@@ -1,5 +1,6 @@
 # Program to locate Python site-packages.
 
+import cProfile
 from os.path import isfile, join
 from os import listdir
 import multiprocessing
@@ -38,9 +39,25 @@ print(int(float(n)))
 print("\n")
 # Program to list all files in a directory in Python.
 
-file_list = [f for f in listdir("/home") if isfile(join("/home", f))]
+file_list = [f for f in listdir("/home/stasiek")
+             if isfile(join("/home/stasiek", f))]
 print(file_list)
 
 
 print("\n")
-# Program
+# Program to print without newline or space.
+
+for i in range(0, 10):
+    print("*", end="")
+print("\n")
+
+
+print("\n")
+# Program to determine profiling of Python programs.
+
+
+def sum():
+    print(1+2)
+
+
+cProfile.run("sum()")
